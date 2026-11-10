@@ -24,7 +24,7 @@ jobs:
             echo "::error::Content assets or C++ found. This mod is packaged as a KDF source mod; switch the Modding build to full plugin packaging first."
             exit 1
           fi
-      - uses: astral-sh/setup-uv@v5
+      - uses: astral-sh/setup-uv@v10.3.3
         with:
           version: latest
       - name: Sync CI dependencies
