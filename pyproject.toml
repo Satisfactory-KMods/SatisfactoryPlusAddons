@@ -1,0 +1,12 @@
+[project]
+name = "satisfactoryplusaddons-ci"
+version = "0.1.0"
+description = "Satisfactory Plus Addons pack validation tooling"
+requires-python = ">=3.11"
+dependencies = [
+  "kdataforge-linter @ git+https://github.com/Satisfactory-KMods/KDataForge-Linter.git@d953c4215b101a0e460e721fd790ca387917bd25",
+  "PyYAML>=6.0,<7",
+]
+
+[tool.uv]
+package = false

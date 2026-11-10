@@ -1,0 +1,42 @@
+name: Satisfactory Plus Addons validation
+
+on:
+  push:
+    branches:
+      - dev
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-packs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check KDF-only packaging
+        shell: bash
+        run: |
+          if [ -d Source ] || find Content -type f ! -name .gitkeep -print -quit | grep -q .; then
+            echo "::error::Content assets or C++ found. This mod is packaged as a KDF source mod; switch the Modding build to full plugin packaging first."
+            exit 1
+          fi
+      - uses: astral-sh/setup-uv@v5
+        with:
+          version: latest
+      - name: Sync CI dependencies
+        run: uv sync --locked
+      - name: Lint DataForge packs
+        shell: bash
+        run: |
+          if find DataForge -name pack.yml -type f -print -quit | grep -q .; then
+            uv run --locked kdataforge-linter lint DataForge --format github
+          else
+            echo "No module packs yet; lint skipped."
+          fi
+
+  # dev is the default branch and only validates. Release builds will run from the protected main
+  # branch; that flow is intentionally absent until the owner enables a manual one.
