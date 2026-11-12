@@ -9,7 +9,7 @@ assets:
     mCoordinate:
       X: -2
       Y: 56
-    mParentTask: 128
+    mParentTask: EKAPIDeliveryTaskParent::BelowRight
     bRequireAllParents: true
     mRequiredParentCompletions: 1
     mName:

@@ -8,5 +8,5 @@ name:
 description:
   ns: SatisfactoryPlus.Modules
   key: WaterDam.Description
-  source: Unlock RefinedPower's waterfall dam through the Delivery Tree. Put designated waterfall sites to work generating hydroelectric power for your factory.
+  source: Adds RefinedPower's Water Dam. A Tier 6 Delivery contract unlocks it, and the Resource Scanner then finds dam sites at waterfalls. A wider site costs more to build. If your save already owns the dam recipe, the contract completes for free. Turned off, the world has no dam sites and the contract is gone.
 defaultEnabled: true
