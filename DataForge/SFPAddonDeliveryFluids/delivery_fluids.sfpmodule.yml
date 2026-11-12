@@ -1,0 +1,11 @@
+type: sfpmodule
+id: DeliveryFluids
+name:
+  ns: SatisfactoryPlus.Modules
+  key: DeliveryFluids.Name
+  source: Delivery Fluids
+description:
+  ns: SatisfactoryPlus.Modules
+  key: DeliveryFluids.Description
+  source: Add optional fluids to selected Delivery contracts from Tier 6 onward.
+defaultEnabled: true

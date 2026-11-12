@@ -1,0 +1,68 @@
+type: cdo
+patches:
+- target: /SatisfactoryPlus/Content/Delivery/T08_NuclearPower/DT_T08_076.DT_T08_076
+  properties:
+    mPoolElements:
+      $op: append
+      value:
+      - mItem: /Game/FactoryGame/Resource/Parts/SulfuricAcid/Desc_SulfuricAcid.Desc_SulfuricAcid_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 2250000
+          UpperBound:
+            Type: Inclusive
+            Value: 5250000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+      - mItem: /KLib/Assets/Ressources/Raw/Gas/Desc_Gas_Chlor.Desc_Gas_Chlor_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 2250000
+          UpperBound:
+            Type: Inclusive
+            Value: 5250000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+    mNetworkPoolItemTiers:
+      $op: append
+      value:
+        /Game/FactoryGame/Resource/Parts/SulfuricAcid/Desc_SulfuricAcid.Desc_SulfuricAcid_C: 8
+        /KLib/Assets/Ressources/Raw/Gas/Desc_Gas_Chlor.Desc_Gas_Chlor_C: 8
+    bRequireAutomaticFluidDelivery: true
+- target: /SatisfactoryPlus/Content/Delivery/T08_NuclearPower/DT_T08_103.DT_T08_103
+  properties:
+    mPoolElements:
+      $op: append
+      value:
+      - mItem: /Game/FactoryGame/Resource/Parts/SulfuricAcid/Desc_SulfuricAcid.Desc_SulfuricAcid_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 2250000
+          UpperBound:
+            Type: Inclusive
+            Value: 5250000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+      - mItem: /KLib/Assets/Ressources/Raw/Gas/Desc_Gas_Chlor.Desc_Gas_Chlor_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 2250000
+          UpperBound:
+            Type: Inclusive
+            Value: 5250000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+    mNetworkPoolItemTiers:
+      $op: append
+      value:
+        /Game/FactoryGame/Resource/Parts/SulfuricAcid/Desc_SulfuricAcid.Desc_SulfuricAcid_C: 8
+        /KLib/Assets/Ressources/Raw/Gas/Desc_Gas_Chlor.Desc_Gas_Chlor_C: 8
+    bRequireAutomaticFluidDelivery: true

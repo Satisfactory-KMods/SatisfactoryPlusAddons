@@ -1,0 +1,68 @@
+type: cdo
+patches:
+- target: /SatisfactoryPlus/Content/Delivery/T09_QuantumProduction/DT_T09_084.DT_T09_084
+  properties:
+    mPoolElements:
+      $op: append
+      value:
+      - mItem: /Game/FactoryGame/Resource/Parts/DarkEnergy/Desc_DarkEnergy.Desc_DarkEnergy_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 3500000
+          UpperBound:
+            Type: Inclusive
+            Value: 7250000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+      - mItem: /Game/FactoryGame/Resource/Parts/QuantumEnergy/Desc_QuantumEnergy.Desc_QuantumEnergy_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 3500000
+          UpperBound:
+            Type: Inclusive
+            Value: 7250000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+    mNetworkPoolItemTiers:
+      $op: append
+      value:
+        /Game/FactoryGame/Resource/Parts/DarkEnergy/Desc_DarkEnergy.Desc_DarkEnergy_C: 9
+        /Game/FactoryGame/Resource/Parts/QuantumEnergy/Desc_QuantumEnergy.Desc_QuantumEnergy_C: 9
+    bRequireAutomaticFluidDelivery: true
+- target: /SatisfactoryPlus/Content/Delivery/T09_QuantumProduction/DT_T09_113.DT_T09_113
+  properties:
+    mPoolElements:
+      $op: append
+      value:
+      - mItem: /Game/FactoryGame/Resource/Parts/DarkEnergy/Desc_DarkEnergy.Desc_DarkEnergy_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 3500000
+          UpperBound:
+            Type: Inclusive
+            Value: 7250000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+      - mItem: /Game/FactoryGame/Resource/Parts/QuantumEnergy/Desc_QuantumEnergy.Desc_QuantumEnergy_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 3500000
+          UpperBound:
+            Type: Inclusive
+            Value: 7250000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+    mNetworkPoolItemTiers:
+      $op: append
+      value:
+        /Game/FactoryGame/Resource/Parts/DarkEnergy/Desc_DarkEnergy.Desc_DarkEnergy_C: 9
+        /Game/FactoryGame/Resource/Parts/QuantumEnergy/Desc_QuantumEnergy.Desc_QuantumEnergy_C: 9
+    bRequireAutomaticFluidDelivery: true

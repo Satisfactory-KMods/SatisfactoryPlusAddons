@@ -1,0 +1,12 @@
+ref: SFPAddonDeliveryFluids
+name: Delivery Fluids
+version: 1.0.0
+description: Optional fluid deliveries for Satisfactory Plus.
+contributer: Kyri123
+enabled: true
+dependencies:
+- SatisfactoryPlusDataForge
+conditions:
+  hasMod:
+  - SatisfactoryPlus
+  - KLib

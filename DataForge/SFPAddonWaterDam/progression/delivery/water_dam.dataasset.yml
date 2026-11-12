@@ -3,12 +3,13 @@ assets:
 - id: Delivery_WaterDam
   class: /Script/KAPI.KAPIDeliveryTask
   properties:
+    mCategory: /SatisfactoryPlus/Content/Delivery/Support/Categories/BP_DeliveryTier06.BP_DeliveryTier06_C
     mAdaMessages:
     - /KDataForge/GenAssets/SatisfactoryPlusDataForge.Gen_SatisfactoryPlusDataForge_Message_ADA_MSG_SFP_Delivery_Tier06_Commissioning
     mCoordinate:
-      X: -3
+      X: -2
       Y: 56
-    mParentTask: 32
+    mParentTask: 128
     bRequireAllParents: true
     mRequiredParentCompletions: 1
     mName:

@@ -1,0 +1,68 @@
+type: cdo
+patches:
+- target: /SatisfactoryPlus/Content/Delivery/T07_AluminumCooling/DT_T07_068.DT_T07_068
+  properties:
+    mPoolElements:
+      $op: append
+      value:
+      - mItem: /KLib/Assets/Ressources/Raw/Fluids/Desc_Wastewater.Desc_Wastewater_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 1500000
+          UpperBound:
+            Type: Inclusive
+            Value: 3750000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+      - mItem: /KLib/Assets/Ressources/Raw/Fluids/Desc_LiquidHydrochloricAcid.Desc_LiquidHydrochloricAcid_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 1500000
+          UpperBound:
+            Type: Inclusive
+            Value: 3750000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+    mNetworkPoolItemTiers:
+      $op: append
+      value:
+        /KLib/Assets/Ressources/Raw/Fluids/Desc_Wastewater.Desc_Wastewater_C: 7
+        /KLib/Assets/Ressources/Raw/Fluids/Desc_LiquidHydrochloricAcid.Desc_LiquidHydrochloricAcid_C: 6
+    bRequireAutomaticFluidDelivery: true
+- target: /SatisfactoryPlus/Content/Delivery/T07_AluminumCooling/DT_T07_075.DT_T07_075
+  properties:
+    mPoolElements:
+      $op: append
+      value:
+      - mItem: /KLib/Assets/Ressources/Raw/Fluids/Desc_Wastewater.Desc_Wastewater_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 1500000
+          UpperBound:
+            Type: Inclusive
+            Value: 3750000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+      - mItem: /KLib/Assets/Ressources/Raw/Fluids/Desc_LiquidHydrochloricAcid.Desc_LiquidHydrochloricAcid_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 1500000
+          UpperBound:
+            Type: Inclusive
+            Value: 3750000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+    mNetworkPoolItemTiers:
+      $op: append
+      value:
+        /KLib/Assets/Ressources/Raw/Fluids/Desc_Wastewater.Desc_Wastewater_C: 7
+        /KLib/Assets/Ressources/Raw/Fluids/Desc_LiquidHydrochloricAcid.Desc_LiquidHydrochloricAcid_C: 6
+    bRequireAutomaticFluidDelivery: true

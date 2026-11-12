@@ -1,0 +1,68 @@
+type: cdo
+patches:
+- target: /SatisfactoryPlus/Content/Delivery/T10_ProjectAssembly/DT_T10_092.DT_T10_092
+  properties:
+    mPoolElements:
+      $op: append
+      value:
+      - mItem: /Game/FactoryGame/Resource/Parts/DissolvedSilica/Desc_DissolvedSilica.Desc_DissolvedSilica_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 5000000
+          UpperBound:
+            Type: Inclusive
+            Value: 10000000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+      - mItem: /Game/FactoryGame/Resource/Parts/DarkEnergy/Desc_DarkEnergy.Desc_DarkEnergy_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 5000000
+          UpperBound:
+            Type: Inclusive
+            Value: 10000000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+    mNetworkPoolItemTiers:
+      $op: append
+      value:
+        /Game/FactoryGame/Resource/Parts/DissolvedSilica/Desc_DissolvedSilica.Desc_DissolvedSilica_C: 9
+        /Game/FactoryGame/Resource/Parts/DarkEnergy/Desc_DarkEnergy.Desc_DarkEnergy_C: 9
+    bRequireAutomaticFluidDelivery: true
+- target: /SatisfactoryPlus/Content/Delivery/T10_ProjectAssembly/DT_T10_129.DT_T10_129
+  properties:
+    mPoolElements:
+      $op: append
+      value:
+      - mItem: /Game/FactoryGame/Resource/Parts/DissolvedSilica/Desc_DissolvedSilica.Desc_DissolvedSilica_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 5000000
+          UpperBound:
+            Type: Inclusive
+            Value: 10000000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+      - mItem: /Game/FactoryGame/Resource/Parts/DarkEnergy/Desc_DarkEnergy.Desc_DarkEnergy_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 5000000
+          UpperBound:
+            Type: Inclusive
+            Value: 10000000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+    mNetworkPoolItemTiers:
+      $op: append
+      value:
+        /Game/FactoryGame/Resource/Parts/DissolvedSilica/Desc_DissolvedSilica.Desc_DissolvedSilica_C: 9
+        /Game/FactoryGame/Resource/Parts/DarkEnergy/Desc_DarkEnergy.Desc_DarkEnergy_C: 9
+    bRequireAutomaticFluidDelivery: true

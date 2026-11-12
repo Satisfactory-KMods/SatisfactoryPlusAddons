@@ -1,0 +1,68 @@
+type: cdo
+patches:
+- target: /SatisfactoryPlus/Content/Delivery/T06_MagneticEngineering/DT_T06_060.DT_T06_060
+  properties:
+    mPoolElements:
+      $op: append
+      value:
+      - mItem: /Game/FactoryGame/Resource/Parts/BioFuel/Desc_LiquidBiofuel.Desc_LiquidBiofuel_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 1000000
+          UpperBound:
+            Type: Inclusive
+            Value: 2750000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+      - mItem: /KLib/Assets/Ressources/Raw/Fluids/Desc_CausticSoda.Desc_CausticSoda_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 1000000
+          UpperBound:
+            Type: Inclusive
+            Value: 2750000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+    mNetworkPoolItemTiers:
+      $op: append
+      value:
+        /Game/FactoryGame/Resource/Parts/BioFuel/Desc_LiquidBiofuel.Desc_LiquidBiofuel_C: 5
+        /KLib/Assets/Ressources/Raw/Fluids/Desc_CausticSoda.Desc_CausticSoda_C: 6
+    bRequireAutomaticFluidDelivery: true
+- target: /SatisfactoryPlus/Content/Delivery/T06_MagneticEngineering/DT_T06_067.DT_T06_067
+  properties:
+    mPoolElements:
+      $op: append
+      value:
+      - mItem: /Game/FactoryGame/Resource/Parts/BioFuel/Desc_LiquidBiofuel.Desc_LiquidBiofuel_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 1000000
+          UpperBound:
+            Type: Inclusive
+            Value: 2750000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+      - mItem: /KLib/Assets/Ressources/Raw/Fluids/Desc_CausticSoda.Desc_CausticSoda_C
+        mAmountRange:
+          LowerBound:
+            Type: Inclusive
+            Value: 1000000
+          UpperBound:
+            Type: Inclusive
+            Value: 2750000
+        mRequiredTas: -1
+        bAlwaysRequired: false
+        mAmountStep: 250000
+    mNetworkPoolItemTiers:
+      $op: append
+      value:
+        /Game/FactoryGame/Resource/Parts/BioFuel/Desc_LiquidBiofuel.Desc_LiquidBiofuel_C: 5
+        /KLib/Assets/Ressources/Raw/Fluids/Desc_CausticSoda.Desc_CausticSoda_C: 6
+    bRequireAutomaticFluidDelivery: true
