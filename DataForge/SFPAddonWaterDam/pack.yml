@@ -1,0 +1,12 @@
+ref: SFPAddonWaterDam
+name: Water Dam
+version: 1.0.0
+description: Optional Water Dam content for Satisfactory Plus.
+contributer: Kyri123
+enabled: true
+dependencies:
+  - SatisfactoryPlusDataForge
+conditions:
+  hasMod:
+    - SatisfactoryPlus
+    - RefinedPower

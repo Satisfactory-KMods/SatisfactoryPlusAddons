@@ -1,0 +1,63 @@
+type: dataasset
+assets:
+- id: Delivery_WaterDam
+  class: /Script/KAPI.KAPIDeliveryTask
+  properties:
+    mAdaMessages:
+    - /KDataForge/GenAssets/SatisfactoryPlusDataForge.Gen_SatisfactoryPlusDataForge_Message_ADA_MSG_SFP_Delivery_Tier06_Commissioning
+    mCoordinate:
+      X: -3
+      Y: 56
+    mParentTask: 32
+    bRequireAllParents: true
+    mRequiredParentCompletions: 1
+    mName:
+      ns: SatisfactoryPlus.Delivery
+      key: WaterDam.Name
+      source: Water Dam
+    mDescription:
+      ns: SatisfactoryPlus.Delivery
+      key: WaterDam.Description
+      source: Generates hydroelectric power at designated waterfall dam sites. The Resource Scanner can locate Water
+        Dam Nodes after this unlock. Construction costs apply to each dam section and scale with the site width.
+        Water extraction is available in Water and Power mode.
+    mIcon: /Game/FactoryGame/Resource/Parts/Cement/UI/IconDesc_Concrete_64.IconDesc_Concrete_64
+    mCosts:
+    - ItemClass: /Game/FactoryGame/Resource/Parts/Cement/Desc_Cement.Desc_Cement_C
+      Amount: 150
+    - ItemClass: /Game/FactoryGame/Resource/Parts/SteelPlateReinforced/Desc_SteelPlateReinforced.Desc_SteelPlateReinforced_C
+      Amount: 75
+    - ItemClass: /Game/FactoryGame/Resource/Parts/ModularFrameHeavy/Desc_ModularFrameHeavy.Desc_ModularFrameHeavy_C
+      Amount: 50
+    - ItemClass: /Game/FactoryGame/Resource/Parts/Motor/Desc_Motor.Desc_Motor_C
+      Amount: 50
+    - ItemClass: /Game/FactoryGame/Resource/Parts/HighSpeedConnector/Desc_HighSpeedConnector.Desc_HighSpeedConnector_C
+      Amount: 50
+  dependencies:
+  - class: /Game/FactoryGame/AvailabilityDependencies/BP_SchematicPurchasedDependency.BP_SchematicPurchasedDependency_C
+    properties:
+      mSchematics:
+      - /SatisfactoryPlus/Content/SchematicManager/Schematics/Milestones/T4/Schematic_SF+_T4_1.Schematic_SF+_T4_1_C
+      - /SatisfactoryPlus/Content/SchematicManager/Schematics/Milestones/T5/Schematic_SF+_T5_0.Schematic_SF+_T5_0_C
+      - /SatisfactoryPlus/Content/SchematicManager/Schematics/Milestones/T6/Schematic_SF+_T6_0.Schematic_SF+_T6_0_C
+      - /SatisfactoryPlus/Content/SchematicManager/Schematics/Milestones/T6/Schematic_SF+_T6_3.Schematic_SF+_T6_3_C
+      mRequireAllSchematicsToBePurchased: true
+  unlocks:
+  - class: /Game/FactoryGame/Unlocks/BP_UnlockRecipe.BP_UnlockRecipe_C
+    properties:
+    - path: mRecipes
+      value:
+      - /RefinedPower/Buildables/WaterDam/Buildable/Recipe_RP_WaterDam.Recipe_RP_WaterDam_C
+  - class: /Game/FactoryGame/Unlocks/BP_UnlockScannableResource.BP_UnlockScannableResource_C
+    properties:
+    - path: mResourcePairsToAddToScanner
+      value:
+      - ResourceDescriptor: /RefinedPower/Buildables/WaterDam/Node/Desc_RP_WaterDamNode.Desc_RP_WaterDamNode_C
+        ResourceNodeType: Invalid
+  rewards:
+  - class: /KPrivateCodeLib/Rewards/BP_DeliveryItemReward.BP_DeliveryItemReward_C
+    properties:
+      mRequiredCompletion: 0
+      mItems:
+      - ItemClass: /Game/FactoryGame/Prototype/WAT/Desc_WAT1.Desc_WAT1_C
+        Amount: 1

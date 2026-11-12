@@ -1,0 +1,4 @@
+type: recipe
+recipes:
+  - class: /RefinedPower/Buildables/WaterDam/Buildable/Recipe_RP_WaterDam.Recipe_RP_WaterDam_C
+    register: true

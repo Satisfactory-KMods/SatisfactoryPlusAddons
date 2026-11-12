@@ -1,0 +1,19 @@
+type: cdo
+conditions:
+  hasMod: RefinedPower
+patches:
+  - target: /RefinedPower/Buildables/WaterDam/Buildable/Recipe_RP_WaterDam.Recipe_RP_WaterDam_C
+    properties:
+      mIngredients:
+        - ItemClass: /Game/FactoryGame/Resource/Parts/Cement/Desc_Cement.Desc_Cement_C
+          Amount: 100
+        - ItemClass: /Game/FactoryGame/Resource/Parts/SteelPlateReinforced/Desc_SteelPlateReinforced.Desc_SteelPlateReinforced_C
+          Amount: 5
+        - ItemClass: /Game/FactoryGame/Resource/Parts/ModularFrameHeavy/Desc_ModularFrameHeavy.Desc_ModularFrameHeavy_C
+          Amount: 2
+        - ItemClass: /Game/FactoryGame/Resource/Parts/Motor/Desc_Motor.Desc_Motor_C
+          Amount: 2
+        - ItemClass: /KLib/Assets/Parts/Production/Metal/Plates/Desc_CopperBusbar.Desc_CopperBusbar_C
+          Amount: 10
+        - ItemClass: /Game/FactoryGame/Resource/Parts/Rubber/Desc_Rubber.Desc_Rubber_C
+          Amount: 10

@@ -1,0 +1,12 @@
+type: sfpmodule
+id: WaterDam
+icon: /RefinedPower/Buildables/WaterDam/Buildable/Icon_RP_WaterDam.Icon_RP_WaterDam
+name:
+  ns: SatisfactoryPlus.Modules
+  key: WaterDam.Name
+  source: Water Dam
+description:
+  ns: SatisfactoryPlus.Modules
+  key: WaterDam.Description
+  source: Unlock RefinedPower's waterfall dam through the Delivery Tree. Put designated waterfall sites to work generating hydroelectric power for your factory.
+defaultEnabled: true

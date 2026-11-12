@@ -1,0 +1,12 @@
+type: cdo
+conditions:
+  hasMod: RefinedPower
+patches:
+  - target: /RefinedPower/Buildables/WaterDam/Buildable/Build_RP_WaterDam.Build_RP_WaterDam_C
+    properties:
+      mDescription:
+        ns: SatisfactoryPlus.Delivery
+        key: WaterDam.Description
+        source: Generates hydroelectric power at designated waterfall dam sites. The Resource Scanner
+          can locate Water Dam Nodes after this unlock. Construction costs apply to each dam section
+          and scale with the site width. Water extraction is available in Water and Power mode.
