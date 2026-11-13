@@ -1,4 +1,5 @@
 type: sfpmodule
+category: Power
 id: WaterDam
 icon: /RefinedPower/Buildables/WaterDam/Buildable/Icon_RP_WaterDam.Icon_RP_WaterDam
 name:
