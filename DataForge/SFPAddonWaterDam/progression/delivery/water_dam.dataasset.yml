@@ -43,18 +43,6 @@ assets:
       - /SatisfactoryPlus/Content/SchematicManager/Schematics/Milestones/T6/Schematic_SF+_T6_0.Schematic_SF+_T6_0_C
       - /SatisfactoryPlus/Content/SchematicManager/Schematics/Milestones/T6/Schematic_SF+_T6_3.Schematic_SF+_T6_3_C
       mRequireAllSchematicsToBePurchased: true
-  unlocks:
-  - class: /Game/FactoryGame/Unlocks/BP_UnlockRecipe.BP_UnlockRecipe_C
-    properties:
-    - path: mRecipes
-      value:
-      - /RefinedPower/Buildables/WaterDam/Buildable/Recipe_RP_WaterDam.Recipe_RP_WaterDam_C
-  - class: /Game/FactoryGame/Unlocks/BP_UnlockScannableResource.BP_UnlockScannableResource_C
-    properties:
-    - path: mResourcePairsToAddToScanner
-      value:
-      - ResourceDescriptor: /RefinedPower/Buildables/WaterDam/Node/Desc_RP_WaterDamNode.Desc_RP_WaterDamNode_C
-        ResourceNodeType: Invalid
   rewards:
   - class: /KPrivateCodeLib/Rewards/BP_DeliveryItemReward.BP_DeliveryItemReward_C
     properties:
@@ -62,3 +50,18 @@ assets:
       mItems:
       - ItemClass: /Game/FactoryGame/Prototype/WAT/Desc_WAT1.Desc_WAT1_C
         Amount: 1
+  - class: /KPrivateCodeLib/Rewards/BP_DeliveryUnlockReward.BP_DeliveryUnlockReward_C
+    properties:
+      mRequiredCompletion: 1
+    unlocks:
+    - class: /Game/FactoryGame/Unlocks/BP_UnlockRecipe.BP_UnlockRecipe_C
+      properties:
+      - path: mRecipes
+        value:
+        - /RefinedPower/Buildables/WaterDam/Buildable/Recipe_RP_WaterDam.Recipe_RP_WaterDam_C
+    - class: /Game/FactoryGame/Unlocks/BP_UnlockScannableResource.BP_UnlockScannableResource_C
+      properties:
+      - path: mResourcePairsToAddToScanner
+        value:
+        - ResourceDescriptor: /RefinedPower/Buildables/WaterDam/Node/Desc_RP_WaterDamNode.Desc_RP_WaterDamNode_C
+          ResourceNodeType: Invalid
