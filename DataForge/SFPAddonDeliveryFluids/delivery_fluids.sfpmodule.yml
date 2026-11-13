@@ -7,5 +7,5 @@ name:
 description:
   ns: SatisfactoryPlus.Modules
   key: DeliveryFluids.Description
-  source: Repeatable Delivery contracts from Tier 6 can also ask for fluids, from 1,000 m³ in Tier 6 up to 10,000 m³ in Tier 10. Each tier adds two fluids to two of its contracts. Fluids only come up once you own the Delivery Adapter and FaxIT fluid transport. Turned off, these contracts ask for items only.
+  source: Repeatable Delivery contracts from Tier 6 can also ask for fluids, from 1,000 m³ in Tier 6 up to 10,000 m³ in Tier 10. A few late Tier 9 and Tier 10 contracts need a fluid too and open once FaxIT can deliver fluids. Turned off, contracts ask for items only.
 defaultEnabled: true

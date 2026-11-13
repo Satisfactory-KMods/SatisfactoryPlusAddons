@@ -1,0 +1,59 @@
+type: cdo
+patches:
+- target: /SatisfactoryPlus/Content/Delivery/T10_ProjectAssembly/DT_T10_086.DT_T10_086
+  properties:
+    mCosts:
+      $op: append
+      value:
+      - ItemClass: /Game/FactoryGame/Resource/Parts/DissolvedSilica/Desc_DissolvedSilica.Desc_DissolvedSilica_C
+        Amount: 5000000
+    mTaskDependencies:
+      $op: append
+      value:
+      - class: /Game/FactoryGame/AvailabilityDependencies/BP_SchematicPurchasedDependency.BP_SchematicPurchasedDependency_C
+        properties:
+        - path: mSchematics
+          value:
+          - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_3_2.Schematic_Faxit_3_2_C
+          - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_1_5.Schematic_Faxit_1_5_C
+          - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_4_10.Schematic_Faxit_4_10_C
+        - path: mRequireAllSchematicsToBePurchased
+          value: true
+- target: /SatisfactoryPlus/Content/Delivery/T10_ProjectAssembly/DT_T10_087.DT_T10_087
+  properties:
+    mCosts:
+      $op: append
+      value:
+      - ItemClass: /Game/FactoryGame/Resource/Parts/DissolvedSilica/Desc_DissolvedSilica.Desc_DissolvedSilica_C
+        Amount: 5000000
+    mTaskDependencies:
+      $op: append
+      value:
+      - class: /Game/FactoryGame/AvailabilityDependencies/BP_SchematicPurchasedDependency.BP_SchematicPurchasedDependency_C
+        properties:
+        - path: mSchematics
+          value:
+          - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_3_2.Schematic_Faxit_3_2_C
+          - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_1_5.Schematic_Faxit_1_5_C
+          - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_4_10.Schematic_Faxit_4_10_C
+        - path: mRequireAllSchematicsToBePurchased
+          value: true
+- target: /SatisfactoryPlus/Content/Delivery/T10_ProjectAssembly/DT_T10_088.DT_T10_088
+  properties:
+    mCosts:
+      $op: append
+      value:
+      - ItemClass: /Game/FactoryGame/Resource/Parts/DissolvedSilica/Desc_DissolvedSilica.Desc_DissolvedSilica_C
+        Amount: 5000000
+    mTaskDependencies:
+      $op: append
+      value:
+      - class: /Game/FactoryGame/AvailabilityDependencies/BP_SchematicPurchasedDependency.BP_SchematicPurchasedDependency_C
+        properties:
+        - path: mSchematics
+          value:
+          - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_3_2.Schematic_Faxit_3_2_C
+          - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_1_5.Schematic_Faxit_1_5_C
+          - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_4_10.Schematic_Faxit_4_10_C
+        - path: mRequireAllSchematicsToBePurchased
+          value: true
