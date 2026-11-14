@@ -1,6 +1,7 @@
 type: sfpmodule
 category: Delivery
 id: DeliveryFluids
+icon: /Game/FactoryGame/Resource/Parts/PackagedWater/UI/IconDesc_PackagedWater_256.IconDesc_PackagedWater_256
 name:
   ns: SatisfactoryPlus.Modules
   key: DeliveryFluids.Name
