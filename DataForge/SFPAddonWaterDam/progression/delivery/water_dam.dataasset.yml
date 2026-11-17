@@ -7,8 +7,8 @@ assets:
     mAdaMessages:
     - /KDataForge/GenAssets/SatisfactoryPlusDataForge.Gen_SatisfactoryPlusDataForge_Message_ADA_MSG_SFP_Delivery_Tier06_Commissioning
     mCoordinate:
-      X: -2
-      Y: 56
+      X: -1
+      Y: 4
     mParentTask: EKAPIDeliveryTaskParent::BelowRight
     bRequireAllParents: true
     mRequiredParentCompletions: 1
