@@ -12,13 +12,11 @@ patches:
       value:
       - class: /Game/FactoryGame/AvailabilityDependencies/BP_SchematicPurchasedDependency.BP_SchematicPurchasedDependency_C
         properties:
-        - path: mSchematics
-          value:
+          mSchematics:
           - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_3_2.Schematic_Faxit_3_2_C
           - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_1_5.Schematic_Faxit_1_5_C
           - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_4_10.Schematic_Faxit_4_10_C
-        - path: mRequireAllSchematicsToBePurchased
-          value: true
+          mRequireAllSchematicsToBePurchased: true
 - target: /SatisfactoryPlus/Content/Delivery/T09_QuantumProduction/DT_T09_042.DT_T09_042
   properties:
     mCosts:
@@ -31,13 +29,11 @@ patches:
       value:
       - class: /Game/FactoryGame/AvailabilityDependencies/BP_SchematicPurchasedDependency.BP_SchematicPurchasedDependency_C
         properties:
-        - path: mSchematics
-          value:
+          mSchematics:
           - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_3_2.Schematic_Faxit_3_2_C
           - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_1_5.Schematic_Faxit_1_5_C
           - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_4_10.Schematic_Faxit_4_10_C
-        - path: mRequireAllSchematicsToBePurchased
-          value: true
+          mRequireAllSchematicsToBePurchased: true
 - target: /SatisfactoryPlus/Content/Delivery/T09_QuantumProduction/DT_T09_043.DT_T09_043
   properties:
     mCosts:
@@ -50,10 +46,8 @@ patches:
       value:
       - class: /Game/FactoryGame/AvailabilityDependencies/BP_SchematicPurchasedDependency.BP_SchematicPurchasedDependency_C
         properties:
-        - path: mSchematics
-          value:
+          mSchematics:
           - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_3_2.Schematic_Faxit_3_2_C
           - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_1_5.Schematic_Faxit_1_5_C
           - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_4_10.Schematic_Faxit_4_10_C
-        - path: mRequireAllSchematicsToBePurchased
-          value: true
+          mRequireAllSchematicsToBePurchased: true

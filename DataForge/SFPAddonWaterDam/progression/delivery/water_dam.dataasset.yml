@@ -56,12 +56,10 @@ assets:
     unlocks:
     - class: /Game/FactoryGame/Unlocks/BP_UnlockRecipe.BP_UnlockRecipe_C
       properties:
-      - path: mRecipes
-        value:
+        mRecipes:
         - /RefinedPower/Buildables/WaterDam/Buildable/Recipe_RP_WaterDam.Recipe_RP_WaterDam_C
     - class: /Game/FactoryGame/Unlocks/BP_UnlockScannableResource.BP_UnlockScannableResource_C
       properties:
-      - path: mResourcePairsToAddToScanner
-        value:
+        mResourcePairsToAddToScanner:
         - ResourceDescriptor: /RefinedPower/Buildables/WaterDam/Node/Desc_RP_WaterDamNode.Desc_RP_WaterDamNode_C
           ResourceNodeType: Invalid
