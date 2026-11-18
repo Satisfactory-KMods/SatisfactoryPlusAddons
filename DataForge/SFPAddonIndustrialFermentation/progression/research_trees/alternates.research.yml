@@ -1,0 +1,14 @@
+type: research
+research:
+- class: /SatisfactoryPlus/Content/SchematicManager/MAM/NewTrees/ResearchTree_AlternateRecipes.ResearchTree_AlternateRecipes_C
+  register: false
+  autoPath: true
+  addNodes:
+  - schematic: Schematic_FermentationAlternates
+    coordinate:
+      X: 6
+      Y: 3
+    parents:
+    - schematic: /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/AlternateRecipes/Schematic_AlternateRecipe_Tree_5_3.Schematic_AlternateRecipe_Tree_5_3_C
+    unhiddenBy:
+    - schematic: /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/AlternateRecipes/Schematic_AlternateRecipe_Tree_5_3.Schematic_AlternateRecipe_Tree_5_3_C

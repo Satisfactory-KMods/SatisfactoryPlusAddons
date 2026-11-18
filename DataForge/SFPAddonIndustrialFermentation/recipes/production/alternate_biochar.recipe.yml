@@ -1,0 +1,17 @@
+type: recipe
+recipes:
+- id: Recipe_Fermentation_S5
+  properties:
+    mDisplayName:
+      ns: SFPAddonIndustrialFermentation
+      key: Recipe.s5.Name
+      source: 'Alternate: Biochar'
+    mIngredients:
+    - ItemClass: /KLib/Assets/Parts/SpentMash/Desc_SpentMash.Desc_SpentMash_C
+      Amount: 36
+    mProduct:
+    - ItemClass: /KLib/Assets/Parts/Production/Powder/Desc_CarbonDust.Desc_CarbonDust_C
+      Amount: 4
+    mManufactoringDuration: 24.0
+    mProducedIn:
+    - /Game/FactoryGame/Buildable/Factory/SmelterMk1/Build_SmelterMk1.Build_SmelterMk1_C

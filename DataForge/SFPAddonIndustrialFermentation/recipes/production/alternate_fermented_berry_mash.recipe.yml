@@ -1,0 +1,19 @@
+type: recipe
+recipes:
+- id: Recipe_Fermentation_F18
+  properties:
+    mDisplayName:
+      ns: SFPAddonIndustrialFermentation
+      key: Recipe.f18.Name
+      source: 'Alternate: Fermented Berry Mash'
+    mIngredients:
+    - ItemClass: /FicsitFarming/Resources/Crops/YosseBerry/Desc_FF_Crop_YosseBerry.Desc_FF_Crop_YosseBerry_C
+      Amount: 9
+    - ItemClass: /Game/FactoryGame/Resource/RawResources/Water/Desc_Water.Desc_Water_C
+      Amount: 3000
+    mProduct:
+    - ItemClass: /KLib/Assets/Parts/Production/Food/Desc_SnailFood_Tier_3.Desc_SnailFood_Tier_3_C
+      Amount: 3
+    mManufactoringDuration: 12.0
+    mProducedIn:
+    - /KLib/Assets/Buildings/Fermenter/Build_Fermenter.Build_Fermenter_C

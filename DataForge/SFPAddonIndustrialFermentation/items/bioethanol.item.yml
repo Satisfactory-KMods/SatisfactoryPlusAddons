@@ -1,0 +1,17 @@
+type: item
+items:
+- id: Desc_Bioethanol
+  parent: /Game/FactoryGame/Resource/Parts/BioFuel/Desc_LiquidBiofuel.Desc_LiquidBiofuel_C
+  properties:
+    mDisplayName:
+      ns: SFPAddonIndustrialFermentation
+      key: Bioethanol.Name
+      source: Bioethanol
+    mDescription:
+      ns: SFPAddonIndustrialFermentation
+      key: Bioethanol.Description
+      source: A crop-derived chemical feedstock that can also be burned as a weak fuel.
+    mStackSize: SS_FLUID
+    mForm: RF_LIQUID
+    mEnergyValue: 0.25
+    mResourceSinkPoints: 0

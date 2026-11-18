@@ -1,0 +1,19 @@
+type: recipe
+recipes:
+- id: Recipe_Fermentation_F12
+  properties:
+    mDisplayName:
+      ns: SFPAddonIndustrialFermentation
+      key: Recipe.f12.Name
+      source: Silage
+    mIngredients:
+    - ItemClass: /Game/FactoryGame/Resource/Parts/GenericBiomass/Desc_Leaves.Desc_Leaves_C
+      Amount: 12
+    - ItemClass: /Game/FactoryGame/Resource/RawResources/Water/Desc_Water.Desc_Water_C
+      Amount: 1000
+    mProduct:
+    - ItemClass: /KLib/Assets/Parts/Production/Food/Desc_SnailFood_Tier_1.Desc_SnailFood_Tier_1_C
+      Amount: 6
+    mManufactoringDuration: 8.0
+    mProducedIn:
+    - /KLib/Assets/Buildings/Fermenter/Build_Fermenter.Build_Fermenter_C

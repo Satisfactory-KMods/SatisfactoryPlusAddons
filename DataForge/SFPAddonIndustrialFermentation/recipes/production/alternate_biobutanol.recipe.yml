@@ -1,0 +1,21 @@
+type: recipe
+recipes:
+- id: Recipe_Fermentation_F15
+  properties:
+    mDisplayName:
+      ns: SFPAddonIndustrialFermentation
+      key: Recipe.f15.Name
+      source: 'Alternate: Biobutanol'
+    mIngredients:
+    - ItemClass: /FicsitFarming/Resources/Crops/Bananas/Desc_FF_Crop_Banana.Desc_FF_Crop_Banana_C
+      Amount: 12
+    - ItemClass: /Game/FactoryGame/Resource/RawResources/Water/Desc_Water.Desc_Water_C
+      Amount: 6000
+    mProduct:
+    - ItemClass: /Game/FactoryGame/Resource/Parts/Fuel/Desc_LiquidFuel.Desc_LiquidFuel_C
+      Amount: 1000
+    - ItemClass: /KLib/Assets/Parts/SpentMash/Desc_SpentMash.Desc_SpentMash_C
+      Amount: 3
+    mManufactoringDuration: 12.0
+    mProducedIn:
+    - /KLib/Assets/Buildings/Fermenter/Build_Fermenter.Build_Fermenter_C

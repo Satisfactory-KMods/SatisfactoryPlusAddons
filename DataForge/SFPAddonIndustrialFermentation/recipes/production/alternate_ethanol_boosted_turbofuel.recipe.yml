@@ -1,0 +1,19 @@
+type: recipe
+recipes:
+- id: Recipe_Fermentation_B3
+  properties:
+    mDisplayName:
+      ns: SFPAddonIndustrialFermentation
+      key: Recipe.b3.Name
+      source: 'Alternate: Ethanol-Boosted Turbofuel'
+    mIngredients:
+    - ItemClass: /Game/FactoryGame/Resource/Parts/Fuel/Desc_LiquidFuel.Desc_LiquidFuel_C
+      Amount: 3000
+    - ItemClass: /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Desc_Bioethanol
+      Amount: 1000
+    mProduct:
+    - ItemClass: /Game/FactoryGame/Resource/Parts/Turbofuel/Desc_LiquidTurboFuel.Desc_LiquidTurboFuel_C
+      Amount: 2000
+    mManufactoringDuration: 3.0
+    mProducedIn:
+    - /KLib/Assets/Buildings/ChemReactor/Build_ChemReactor.Build_ChemReactor_C

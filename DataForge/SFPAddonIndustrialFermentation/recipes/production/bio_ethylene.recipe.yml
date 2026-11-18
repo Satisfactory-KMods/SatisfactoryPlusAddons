@@ -1,0 +1,19 @@
+type: recipe
+recipes:
+- id: Recipe_Fermentation_B1
+  properties:
+    mDisplayName:
+      ns: SFPAddonIndustrialFermentation
+      key: Recipe.b1.Name
+      source: Bio-Ethylene
+    mIngredients:
+    - ItemClass: /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Desc_Bioethanol
+      Amount: 6000
+    mProduct:
+    - ItemClass: /KLib/Assets/Ressources/Raw/Gas/Desc_Ethylene.Desc_Ethylene_C
+      Amount: 4000
+    - ItemClass: /Game/FactoryGame/Resource/RawResources/Water/Desc_Water.Desc_Water_C
+      Amount: 2000
+    mManufactoringDuration: 6.0
+    mProducedIn:
+    - /KLib/Assets/Buildings/ChemReactor/Build_ChemReactor.Build_ChemReactor_C

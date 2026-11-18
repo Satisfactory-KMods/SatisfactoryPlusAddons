@@ -1,0 +1,19 @@
+type: recipe
+recipes:
+- id: Recipe_Fermentation_F14
+  properties:
+    mDisplayName:
+      ns: SFPAddonIndustrialFermentation
+      key: Recipe.f14.Name
+      source: 'Alternate: Mycoprotein'
+    mIngredients:
+    - ItemClass: /FicsitFarming/Resources/Crops/Potato/Desc_FF_Crop_Potato.Desc_FF_Crop_Potato_C
+      Amount: 12
+    - ItemClass: /Game/FactoryGame/Resource/RawResources/Water/Desc_Water.Desc_Water_C
+      Amount: 6000
+    mProduct:
+    - ItemClass: /Game/FactoryGame/Resource/Parts/AlienProtein/Desc_AlienProtein.Desc_AlienProtein_C
+      Amount: 1
+    mManufactoringDuration: 12.0
+    mProducedIn:
+    - /KLib/Assets/Buildings/Fermenter/Build_Fermenter.Build_Fermenter_C

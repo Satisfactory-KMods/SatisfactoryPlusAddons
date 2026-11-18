@@ -1,0 +1,19 @@
+type: recipe
+recipes:
+- id: Recipe_Fermentation_B2
+  properties:
+    mDisplayName:
+      ns: SFPAddonIndustrialFermentation
+      key: Recipe.b2.Name
+      source: 'Alternate: Lebedev Rubber'
+    mIngredients:
+    - ItemClass: /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Desc_Bioethanol
+      Amount: 5000
+    mProduct:
+    - ItemClass: /Game/FactoryGame/Resource/Parts/Rubber/Desc_Rubber.Desc_Rubber_C
+      Amount: 3
+    - ItemClass: /Game/FactoryGame/Resource/RawResources/Water/Desc_Water.Desc_Water_C
+      Amount: 2000
+    mManufactoringDuration: 6.0
+    mProducedIn:
+    - /Game/FactoryGame/Buildable/Factory/OilRefinery/Build_OilRefinery.Build_OilRefinery_C

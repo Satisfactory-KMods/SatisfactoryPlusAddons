@@ -1,0 +1,21 @@
+type: recipe
+recipes:
+- id: Recipe_Fermentation_B5
+  properties:
+    mDisplayName:
+      ns: SFPAddonIndustrialFermentation
+      key: Recipe.b5.Name
+      source: 'Alternate: Nitrocellulose'
+    mIngredients:
+    - ItemClass: /FicsitFarming/Resources/Crops/Cotton/Desc_FF_Crop_Cotton.Desc_FF_Crop_Cotton_C
+      Amount: 4
+    - ItemClass: /Game/FactoryGame/Resource/Parts/NitricAcid/Desc_NitricAcid.Desc_NitricAcid_C
+      Amount: 3000
+    - ItemClass: /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Desc_Bioethanol
+      Amount: 2000
+    mProduct:
+    - ItemClass: /Game/FactoryGame/Resource/Parts/GunPowder/Desc_GunpowderMK2.Desc_GunpowderMK2_C
+      Amount: 4
+    mManufactoringDuration: 6.0
+    mProducedIn:
+    - /Game/FactoryGame/Buildable/Factory/Blender/Build_Blender.Build_Blender_C

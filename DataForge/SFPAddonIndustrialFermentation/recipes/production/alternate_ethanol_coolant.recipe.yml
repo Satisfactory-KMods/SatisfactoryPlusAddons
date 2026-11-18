@@ -1,0 +1,19 @@
+type: recipe
+recipes:
+- id: Recipe_Fermentation_B4
+  properties:
+    mDisplayName:
+      ns: SFPAddonIndustrialFermentation
+      key: Recipe.b4.Name
+      source: 'Alternate: Ethanol Coolant'
+    mIngredients:
+    - ItemClass: /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Desc_Bioethanol
+      Amount: 4000
+    - ItemClass: /Game/FactoryGame/Resource/RawResources/Water/Desc_Water.Desc_Water_C
+      Amount: 2000
+    mProduct:
+    - ItemClass: /KLib/Assets/Ressources/Raw/Fluids/Desc_CoolingWater.Desc_CoolingWater_C
+      Amount: 4000
+    mManufactoringDuration: 4.0
+    mProducedIn:
+    - /Game/FactoryGame/Buildable/Factory/Blender/Build_Blender.Build_Blender_C

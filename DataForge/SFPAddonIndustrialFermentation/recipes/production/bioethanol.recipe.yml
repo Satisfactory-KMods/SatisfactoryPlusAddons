@@ -1,0 +1,21 @@
+type: recipe
+recipes:
+- id: Recipe_Fermentation_F1
+  properties:
+    mDisplayName:
+      ns: SFPAddonIndustrialFermentation
+      key: Recipe.f1.Name
+      source: Bioethanol
+    mIngredients:
+    - ItemClass: /FicsitFarming/Resources/Crops/Corn/Desc_FF_Crop_Corn.Desc_FF_Crop_Corn_C
+      Amount: 6
+    - ItemClass: /Game/FactoryGame/Resource/RawResources/Water/Desc_Water.Desc_Water_C
+      Amount: 4000
+    mProduct:
+    - ItemClass: /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Desc_Bioethanol
+      Amount: 4000
+    - ItemClass: /KLib/Assets/Parts/SpentMash/Desc_SpentMash.Desc_SpentMash_C
+      Amount: 2
+    mManufactoringDuration: 6.0
+    mProducedIn:
+    - /KLib/Assets/Buildings/Fermenter/Build_Fermenter.Build_Fermenter_C

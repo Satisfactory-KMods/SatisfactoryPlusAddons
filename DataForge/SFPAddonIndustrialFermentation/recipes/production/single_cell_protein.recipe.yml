@@ -1,0 +1,19 @@
+type: recipe
+recipes:
+- id: Recipe_Fermentation_F7
+  properties:
+    mDisplayName:
+      ns: SFPAddonIndustrialFermentation
+      key: Recipe.f7.Name
+      source: Single-Cell Protein
+    mIngredients:
+    - ItemClass: /KLib/Assets/Parts/SpentMash/Desc_SpentMash.Desc_SpentMash_C
+      Amount: 10
+    - ItemClass: /FicsitFarming/Resources/RawResources/Fertilizer/Desc_FF_Fertilizer.Desc_FF_Fertilizer_C
+      Amount: 3000
+    mProduct:
+    - ItemClass: /Game/FactoryGame/Resource/Parts/AlienProtein/Desc_AlienProtein.Desc_AlienProtein_C
+      Amount: 1
+    mManufactoringDuration: 12.0
+    mProducedIn:
+    - /KLib/Assets/Buildings/Fermenter/Build_Fermenter.Build_Fermenter_C

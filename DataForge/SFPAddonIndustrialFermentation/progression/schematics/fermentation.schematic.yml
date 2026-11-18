@@ -1,0 +1,60 @@
+type: schematic
+schematics:
+- id: Schematic_Fermentation
+  properties:
+    mType: EST_MAM
+    mDisplayName: Industrial Fermentation
+    mTimeToComplete: 10
+  recipes:
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermenter
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F1
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_S1
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_PackBioethanol
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_UnpackBioethanol
+- id: Schematic_FermentationProcessing
+  properties:
+    mType: EST_MAM
+    mDisplayName: Fermentation Processing
+    mTimeToComplete: 10
+  recipes:
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_B1
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F4
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_S2
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F12
+- id: Schematic_FermentationAdvanced
+  properties:
+    mType: EST_MAM
+    mDisplayName: Advanced Fermentation
+    mTimeToComplete: 10
+  recipes:
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F6
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F7
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F10
+- id: Schematic_FermentationAlternates
+  properties:
+    mType: EST_MAM
+    mDisplayName: Alternative Fermentation
+    mTimeToComplete: 10
+    mCost:
+    - ItemClass: /KLib/Assets/Parts/SpentMash/Desc_SpentMash.Desc_SpentMash_C
+      Amount: 50
+    - ItemClass: /KLib/Assets/Parts/Coupon/Desc_KModsCoupon.Desc_KModsCoupon_C
+      Amount: 2
+  recipes:
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F2
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F3
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F5
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F8
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F9
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F11
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F13
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F14
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F15
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F16
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F17
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_F18
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_B2
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_B3
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_B4
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_B5
+  - /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Recipe_Fermentation_S5

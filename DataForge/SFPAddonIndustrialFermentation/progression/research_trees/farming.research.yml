@@ -1,0 +1,30 @@
+type: research
+research:
+- class: /SatisfactoryPlus/Content/SchematicManager/MAM/NewTrees/ResearchTree_Farming.ResearchTree_Farming_C
+  register: false
+  autoPath: true
+  addNodes:
+  - schematic: Schematic_Fermentation
+    coordinate:
+      X: 2
+      Y: 5
+    parents:
+    - schematic: /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Farming/Schematic_Tree_Farming_Composter.Schematic_Tree_Farming_Composter_C
+    unhiddenBy:
+    - schematic: /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Farming/Schematic_Tree_Farming_Composter.Schematic_Tree_Farming_Composter_C
+  - schematic: Schematic_FermentationProcessing
+    coordinate:
+      X: 2
+      Y: 6
+    parents:
+    - schematic: Schematic_Fermentation
+    unhiddenBy:
+    - schematic: Schematic_Fermentation
+  - schematic: Schematic_FermentationAdvanced
+    coordinate:
+      X: 2
+      Y: 7
+    parents:
+    - schematic: Schematic_FermentationProcessing
+    unhiddenBy:
+    - schematic: Schematic_FermentationProcessing

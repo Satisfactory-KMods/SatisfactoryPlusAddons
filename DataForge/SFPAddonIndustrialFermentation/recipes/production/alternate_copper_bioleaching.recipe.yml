@@ -1,0 +1,19 @@
+type: recipe
+recipes:
+- id: Recipe_Fermentation_F11
+  properties:
+    mDisplayName:
+      ns: SFPAddonIndustrialFermentation
+      key: Recipe.f11.Name
+      source: 'Alternate: Copper Bioleaching'
+    mIngredients:
+    - ItemClass: /KLib/Assets/Parts/Production/Powder/Desc_Gangue.Desc_Gangue_C
+      Amount: 12
+    - ItemClass: /Game/FactoryGame/Resource/Parts/SulfuricAcid/Desc_SulfuricAcid.Desc_SulfuricAcid_C
+      Amount: 2000
+    mProduct:
+    - ItemClass: /KLib/Assets/Parts/Production/Crushed/Desc_CrushedCopper.Desc_CrushedCopper_C
+      Amount: 3
+    mManufactoringDuration: 12.0
+    mProducedIn:
+    - /KLib/Assets/Buildings/Fermenter/Build_Fermenter.Build_Fermenter_C

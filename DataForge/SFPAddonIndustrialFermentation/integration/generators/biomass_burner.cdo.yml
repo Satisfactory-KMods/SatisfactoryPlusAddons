@@ -1,0 +1,7 @@
+type: cdo
+patches:
+- target: /Game/FactoryGame/Buildable/Factory/GeneratorBiomass/Build_GeneratorBiomass_Automated.Build_GeneratorBiomass_Automated_C
+  properties:
+    mDefaultFuelClasses:
+      $op: append_unique
+      value: /KLib/Assets/Parts/SpentMash/Desc_SpentMash.Desc_SpentMash_C

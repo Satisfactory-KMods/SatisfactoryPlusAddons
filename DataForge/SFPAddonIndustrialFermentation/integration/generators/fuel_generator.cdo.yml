@@ -1,0 +1,7 @@
+type: cdo
+patches:
+- target: /Game/FactoryGame/Buildable/Factory/GeneratorFuel/Build_GeneratorFuel.Build_GeneratorFuel_C
+  properties:
+    mDefaultFuelClasses:
+      $op: append_unique
+      value: /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Desc_Bioethanol

@@ -1,0 +1,19 @@
+type: recipe
+recipes:
+- id: Recipe_Fermentation_F10
+  properties:
+    mDisplayName:
+      ns: SFPAddonIndustrialFermentation
+      key: Recipe.f10.Name
+      source: Biohydrogen
+    mIngredients:
+    - ItemClass: /KLib/Assets/Parts/SpentMash/Desc_SpentMash.Desc_SpentMash_C
+      Amount: 8
+    - ItemClass: /Game/FactoryGame/Resource/RawResources/Water/Desc_Water.Desc_Water_C
+      Amount: 4000
+    mProduct:
+    - ItemClass: /KLib/Assets/Ressources/Raw/Gas/Desc_Gas_Hydrogen.Desc_Gas_Hydrogen_C
+      Amount: 5000
+    mManufactoringDuration: 10.0
+    mProducedIn:
+    - /KLib/Assets/Buildings/Fermenter/Build_Fermenter.Build_Fermenter_C

@@ -1,0 +1,13 @@
+ref: SFPAddonIndustrialFermentation
+name: Industrial Fermentation
+version: 0.1.0
+description: Fermentation recipes and research for Satisfactory Plus.
+enabled: false
+dependencies:
+- SatisfactoryPlusDataForge
+conditions:
+  hasMod:
+  - SatisfactoryPlus
+  - KLib
+  - KModelLib
+  - FicsitFarming

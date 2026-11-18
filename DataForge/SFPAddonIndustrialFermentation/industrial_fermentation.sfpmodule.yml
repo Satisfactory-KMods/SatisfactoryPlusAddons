@@ -1,0 +1,13 @@
+type: sfpmodule
+category: Production
+id: IndustrialFermentation
+icon: /KLib/Assets/Parts/SpentMash/UI/IconDesc_SpentMash_256.IconDesc_SpentMash_256
+name:
+  ns: SatisfactoryPlus.Modules
+  key: IndustrialFermentation.Name
+  source: Industrial Fermentation
+description:
+  ns: SatisfactoryPlus.Modules
+  key: IndustrialFermentation.Description
+  source: Ferment crops into Bioethanol and Spent Mash for fuel, chemicals, compost and feed.
+defaultEnabled: false

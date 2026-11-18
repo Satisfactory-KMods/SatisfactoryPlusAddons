@@ -1,0 +1,16 @@
+type: recipe
+recipes:
+- id: Recipe_PackBioethanol
+  properties:
+    mDisplayName: Pack bioethanol
+    mIngredients:
+    - ItemClass: /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Desc_Bioethanol
+      Amount: 1000
+    - ItemClass: /Game/FactoryGame/Resource/Parts/FluidCanister/Desc_FluidCanister.Desc_FluidCanister_C
+      Amount: 1
+    mProduct:
+    - ItemClass: /KLib/Assets/Parts/Packaged/Items/Bioethanol/Desc_PackagedBioethanol.Desc_PackagedBioethanol_C
+      Amount: 1
+    mManufactoringDuration: 2.0
+    mProducedIn:
+    - /Game/FactoryGame/Buildable/Factory/Packager/Build_Packager.Build_Packager_C

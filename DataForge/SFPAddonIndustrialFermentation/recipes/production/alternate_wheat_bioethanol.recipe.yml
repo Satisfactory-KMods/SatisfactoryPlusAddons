@@ -1,0 +1,21 @@
+type: recipe
+recipes:
+- id: Recipe_Fermentation_F2
+  properties:
+    mDisplayName:
+      ns: SFPAddonIndustrialFermentation
+      key: Recipe.f2.Name
+      source: 'Alternate: Wheat Bioethanol'
+    mIngredients:
+    - ItemClass: /FicsitFarming/Resources/Crops/Wheat/Desc_FF_Crop_Wheat.Desc_FF_Crop_Wheat_C
+      Amount: 8
+    - ItemClass: /Game/FactoryGame/Resource/RawResources/Water/Desc_Water.Desc_Water_C
+      Amount: 4000
+    mProduct:
+    - ItemClass: /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Desc_Bioethanol
+      Amount: 4000
+    - ItemClass: /KLib/Assets/Parts/SpentMash/Desc_SpentMash.Desc_SpentMash_C
+      Amount: 4
+    mManufactoringDuration: 6.0
+    mProducedIn:
+    - /KLib/Assets/Buildings/Fermenter/Build_Fermenter.Build_Fermenter_C
