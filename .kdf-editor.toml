@@ -1,0 +1,4 @@
+[lint]
+schema_dirs = ["ci/schemas"]
+allow_schema_override = true
+external_packs = ["SatisfactoryPlusDataForge"]

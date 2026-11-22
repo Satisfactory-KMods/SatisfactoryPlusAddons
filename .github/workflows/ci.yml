@@ -24,16 +24,24 @@ jobs:
             echo "::error::Content assets or C++ found. This mod is packaged as a KDF source mod; switch the Modding build to full plugin packaging first."
             exit 1
           fi
-      - uses: astral-sh/setup-uv@v5
+      - name: Checkout canonical KDataForge validator
+        uses: actions/checkout@v4
         with:
-          version: latest
-      - name: Sync CI dependencies
-        run: uv sync --locked
+          repository: Satisfactory-KMods/kdataforge-tools
+          ref: feat/kdataforge-authoring-qol
+          path: .ci/kdataforge-tools
+          persist-credentials: false
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: .ci/kdataforge-tools
+      - name: Build kdf CLI
+        run: cargo build --manifest-path .ci/kdataforge-tools/Cargo.toml --locked --release --bin kdf
       - name: Lint DataForge packs
         shell: bash
         run: |
           if find DataForge -name pack.yml -type f -print -quit | grep -q .; then
-            uv run --locked kdataforge-linter lint DataForge --format github
+            .ci/kdataforge-tools/target/release/kdf lint DataForge --format github
           else
             echo "No module packs yet; lint skipped."
           fi

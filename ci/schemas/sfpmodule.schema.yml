@@ -1,0 +1,76 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://example.invalid/satisfactoryplus/sfpmodule.schema.yml
+x-kdf-type: sfpmodule
+title: SatisfactoryPlus module
+type: object
+additionalProperties: false
+required:
+  - type
+  - id
+  - name
+  - description
+properties:
+  type:
+    const: sfpmodule
+  id:
+    $ref: '#/$defs/id'
+  name:
+    $ref: '#/$defs/text'
+  description:
+    $ref: '#/$defs/text'
+  icon:
+    type: string
+    description: >-
+      Omit or use an empty string for no icon. A nonempty value without a leading
+      slash is a pack-relative image path: every segment starts with an ASCII
+      letter, digit or underscore and otherwise contains only ASCII letters,
+      digits, underscores, hyphens or dots. Existing file containment checks apply;
+      relative paths have no additional length cap. A leading slash selects a
+      top-level Unreal texture object path /Root/Package.Asset, at most 1024
+      characters, with valid long-package and object names, no empty component,
+      double dots, backslash or subobject suffix. The mount and asset need not
+      exist at parse time. Invalid object syntax produces a nonfatal runtime
+      diagnostic and clears only the icon; the module declaration remains usable.
+      The UI cache must load the referenced object as UTexture2D.
+    if:
+      pattern: '^/'
+    then:
+      maxLength: 1024
+      pattern: >-
+        ^/[^\\:*?"<>|' ,.&!~\x0A\x0D\x09@#/]+(?:/[^\\:*?"<>|' ,.&!~\x0A\x0D\x09@#/]+)+\.[^\\"' ,/.:|&!~\x0A\x0D\x09@#(){}\[\]=;^%$`]+$
+      not:
+        pattern: '\.[Nn][Oo][Nn][Ee]$'
+    else:
+      pattern: '^(?:[A-Za-z0-9_][A-Za-z0-9_.-]*(/[A-Za-z0-9_][A-Za-z0-9_.-]*)*)?$'
+  category:
+    type: string
+    description: Built-in category name, generated class ID in this pack, or Unreal category class path.
+    default: Uncategorized
+  dependencies:
+    type: array
+    items:
+      $ref: '#/$defs/id'
+  conflicts:
+    type: array
+    items:
+      $ref: '#/$defs/id'
+  defaultEnabled:
+    type: boolean
+    default: false
+$defs:
+  id:
+    type: string
+    pattern: '^[A-Za-z][A-Za-z0-9_.-]*$'
+  text:
+    type: object
+    additionalProperties: false
+    required:
+      - key
+    properties:
+      ns:
+        type: string
+      key:
+        type: string
+        minLength: 1
+      source:
+        type: string
