@@ -1,0 +1,8 @@
+type: cdo
+patches:
+  - target: /RefinedPower/Buildables/WaterDam/Node/Desc_RP_WaterDamNode.Desc_RP_WaterDamNode_C
+    properties:
+      - path: mGameplayTags
+        op: append
+        value:
+          - KMods.Scanner.Addon.WaterDam.Resource

@@ -2,6 +2,7 @@ type: recipe
 recipes:
 - id: Recipe_Fermentation_F6
   properties:
+    mDisplayNameOverride: true
     mDisplayName:
       ns: SFPAddonIndustrialFermentation
       key: Recipe.f6.Name

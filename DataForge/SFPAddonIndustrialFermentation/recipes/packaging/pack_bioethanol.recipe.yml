@@ -2,6 +2,7 @@ type: recipe
 recipes:
 - id: Recipe_PackBioethanol
   properties:
+    mDisplayNameOverride: true
     mDisplayName: Pack bioethanol
     mIngredients:
     - ItemClass: /KDataForge/Gen/SFPAddonIndustrialFermentation.Gen_SFPAddonIndustrialFermentation_Desc_Bioethanol

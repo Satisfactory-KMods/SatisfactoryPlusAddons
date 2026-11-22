@@ -2,6 +2,7 @@ type: recipe
 recipes:
 - id: Recipe_UnpackBioethanol
   properties:
+    mDisplayNameOverride: true
     mDisplayName: Unpack bioethanol
     mIngredients:
     - ItemClass: /KLib/Assets/Parts/Packaged/Items/Bioethanol/Desc_PackagedBioethanol.Desc_PackagedBioethanol_C

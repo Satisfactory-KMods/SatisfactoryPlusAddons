@@ -3,5 +3,7 @@ assets:
 - id: AllowList_WaterDamNode
   class: /Script/KAPI.KAPIExtractorAllowList
   properties:
-    mAllowedResources:
-    - /RefinedPower/Buildables/WaterDam/Node/Desc_RP_WaterDamNode.Desc_RP_WaterDamNode_C
+    - path: mAllowedResourceTags
+      op: append
+      value:
+      - KMods.Scanner.Addon.WaterDam.Resource

@@ -2,6 +2,7 @@ type: recipe
 recipes:
 - id: Recipe_Fermenter
   properties:
+    mDisplayNameOverride: true
     mDisplayName: Fermenter
     mIngredients:
     - ItemClass: /Game/FactoryGame/Resource/Parts/Motor/Desc_Motor.Desc_Motor_C
