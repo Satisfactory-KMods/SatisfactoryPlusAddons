@@ -1,0 +1,73 @@
+type: sound
+sounds:
+  - id: Audio_ADA_ADA_SFP_MAM_FaxitDimensionalAssembler
+    file: audio/ada/custom/ada_sfp_mam_faxit_dimensional_assembler.ogg
+    name: Dimensional Assembler
+    description: 'Volume of ADA message: Dimensional Assembler'
+    category: Satisfactory
+    subCategory: ADA
+---
+type: dataasset
+assets:
+  - id: Message_ADA_ADA_SFP_MAM_FaxitDimensionalAssembler
+    class: /Script/FactoryGame.FGMessage
+    properties:
+      mTitle:
+        ns: SFP_ADA
+        key: ADA_SFP_MAM_FaxitDimensionalAssembler.Title
+        source: Dimensional Assembler
+      mMessage:
+        ns: SFP_ADA
+        key: ADA_SFP_MAM_FaxitDimensionalAssembler.Body
+        source: Dimensional Assembler unlocked. It produces almost any recipe you have unlocked at one
+          and a half times the usual speed. Ingredients come from a connected FaxIT Nexus, and products
+          return there. No belts. No pipes. It occupies five network slots and draws 200 megawatts. Power
+          Shards and Somersloops are welcome, at a price you can calculate. The dimension it works in
+          is, I am told, perfectly tidy. I have not been invited to verify.
+      mAudioEvent: Audio_ADA_ADA_SFP_MAM_FaxitDimensionalAssembler
+      mSubtitles:
+        - Subtitle:
+            ns: SFP_ADA
+            key: ADA_SFP_MAM_FaxitDimensionalAssembler.Subtitle_001
+            source: Dimensional Assembler unlocked. It produces almost any recipe you have unlocked at
+              one and a half times the usual speed.
+          SenderClass: /Game/FactoryGame/Interface/UI/Message/Sender/Sender_ADA.Sender_ADA_C
+          TimeStamp: 0.0
+        - Subtitle:
+            ns: SFP_ADA
+            key: ADA_SFP_MAM_FaxitDimensionalAssembler.Subtitle_002
+            source: Ingredients come from a connected FaxIT Nexus, and products return there. No belts.
+              No pipes.
+          SenderClass: /Game/FactoryGame/Interface/UI/Message/Sender/Sender_ADA.Sender_ADA_C
+          TimeStamp: 7.716643991
+        - Subtitle:
+            ns: SFP_ADA
+            key: ADA_SFP_MAM_FaxitDimensionalAssembler.Subtitle_003
+            source: It occupies five network slots and draws 200 megawatts. Power Shards and Somersloops
+              are welcome, at a price you can calculate.
+          SenderClass: /Game/FactoryGame/Interface/UI/Message/Sender/Sender_ADA.Sender_ADA_C
+          TimeStamp: 14.771746032
+        - Subtitle:
+            ns: SFP_ADA
+            key: ADA_SFP_MAM_FaxitDimensionalAssembler.Subtitle_004
+            source: The dimension it works in is, I am told, perfectly tidy. I have not been invited to
+              verify.
+          SenderClass: /Game/FactoryGame/Interface/UI/Message/Sender/Sender_ADA.Sender_ADA_C
+          TimeStamp: 23.9130839
+      mMessageSharing: EMS_AlwaysShare
+      mMessageSharingDistanceOverride: 0.0
+      mTrigger:
+        class: /Game/FactoryGame/AvailabilityDependencies/BP_SchematicPurchasedDependency.BP_SchematicPurchasedDependency_C
+        properties:
+          mSchematics:
+            - /KDataForge/Gen/SFPAddonDimensionalAssembler.Gen_SFPAddonDimensionalAssembler_Schematic_Faxit_DimensionalAssembler_C
+          mRequireAllSchematicsToBePurchased: true
+      mTriggerDelay: 0.0
+      mConditions: []
+      mCanBeQueued: true
+      mCanBeRepeated: false
+      mCanInterrupt: false
+      mPlayInterruptMessage: false
+      mBlockedByCooldown: false
+      mPriority: 1.0
+      mUnlocks: []

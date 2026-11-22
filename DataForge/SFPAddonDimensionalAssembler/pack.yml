@@ -1,0 +1,14 @@
+ref: SFPAddonDimensionalAssembler
+name: Dimensional Assembler
+version: 0.1.0
+description: Optional FaxIT Dimensional Assembler module for Satisfactory Plus.
+contributer: Kyri123
+enabled: false
+dependencies:
+  - SatisfactoryPlusDataForge
+conditions:
+  hasMod:
+    - SatisfactoryPlus
+    - KLib
+    - KModelLib
+    - KPrivateCodeLib

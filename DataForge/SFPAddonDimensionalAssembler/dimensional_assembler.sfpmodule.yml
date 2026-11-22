@@ -1,0 +1,14 @@
+type: sfpmodule
+category: Production
+id: DimensionalAssembler
+# Temporary verified KLib texture matching Desc_CS_DimensionalAssembler until W3 KIconMaker icon lands.
+icon: /KLib/Assets/Buildings/Faxit/UI/Icons/Icon_ConverterMk1.Icon_ConverterMk1
+name:
+  ns: SatisfactoryPlus.Modules
+  key: DimensionalAssembler.Name
+  source: Dimensional Assembler
+description:
+  ns: SatisfactoryPlus.Modules
+  key: DimensionalAssembler.Description
+  source: Adds the Dimensional Assembler to the FaxIT research tree after Fluid Transport. It crafts unlocked factory recipes directly from and into a cabled FaxIT Nexus at 1.5x speed for 200 MW, using 5 network slots and no belts or pipes. Turned off, the research node and build recipe stay hidden.
+defaultEnabled: false

@@ -1,0 +1,4 @@
+type: recipe
+recipes:
+  - class: /KLib/Assets/Buildings/Faxit/Recipes/Recipe_CS_DimensionalAssembler.Recipe_CS_DimensionalAssembler_C
+    register: true

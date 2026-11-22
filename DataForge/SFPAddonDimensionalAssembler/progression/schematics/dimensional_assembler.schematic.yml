@@ -1,0 +1,33 @@
+type: schematic
+schematics:
+  - id: Schematic_Faxit_DimensionalAssembler
+    properties:
+      mType: EST_MAM
+      mDisplayName:
+        ns: SatisfactoryPlus.Modules
+        key: DimensionalAssembler.SchematicName
+        source: Dimensional Assembly
+      mTechTier: 6
+      mTimeToComplete: 30.0
+      # Temporary verified KLib texture matching Desc_CS_DimensionalAssembler until W3 KIconMaker icon lands.
+      mSchematicIcon:
+        ResourceObject: /KLib/Assets/Buildings/Faxit/UI/Icons/Icon_ConverterMk1.Icon_ConverterMk1
+      mSmallSchematicIcon: /KLib/Assets/Buildings/Faxit/UI/Icons/Icon_ConverterMk1.Icon_ConverterMk1
+      mCost:
+        - ItemClass: /Game/FactoryGame/Resource/Parts/SpaceElevatorParts/Desc_SpaceElevatorPart_4.Desc_SpaceElevatorPart_4_C
+          Amount: 8
+        - ItemClass: /Game/FactoryGame/Resource/Parts/SpaceElevatorParts/Desc_SpaceElevatorPart_5.Desc_SpaceElevatorPart_5_C
+          Amount: 4
+        - ItemClass: /Game/FactoryGame/Resource/Parts/Computer/Desc_Computer.Desc_Computer_C
+          Amount: 40
+        - ItemClass: /Game/FactoryGame/Resource/Parts/CircuitBoard/Desc_CircuitBoard.Desc_CircuitBoard_C
+          Amount: 80
+    dependencies:
+      - class: /Game/FactoryGame/AvailabilityDependencies/BP_SchematicPurchasedDependency.BP_SchematicPurchasedDependency_C
+        properties:
+          mRequireAllSchematicsToBePurchased: true
+          mSchematics:
+            - /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_4_10.Schematic_Faxit_4_10_C
+            - /SatisfactoryPlus/Content/SchematicManager/Schematics/Milestones/T6/Schematic_SF+_T6_3.Schematic_SF+_T6_3_C
+    recipes:
+      - /KLib/Assets/Buildings/Faxit/Recipes/Recipe_CS_DimensionalAssembler.Recipe_CS_DimensionalAssembler_C

@@ -1,0 +1,10 @@
+type: category_reorder
+subType: buildings
+category: /KDataForge/Gen/SatisfactoryPlusDataForge.Gen_SatisfactoryPlusDataForge_Cat_Faxit_faxit
+subCategory: /KDataForge/Gen/SatisfactoryPlusDataForge.Gen_SatisfactoryPlusDataForge_Cat_Faxit_nexus_storage
+order:
+  - /KLib/Assets/Buildings/Faxit/BuildDesc/Desc_CS_DimensionalAssembler.Desc_CS_DimensionalAssembler_C
+quickSwitchGroups:
+  - id: null
+    targets:
+      - /KLib/Assets/Buildings/Faxit/BuildDesc/Desc_CS_DimensionalAssembler.Desc_CS_DimensionalAssembler_C

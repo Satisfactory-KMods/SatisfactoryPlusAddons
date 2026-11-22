@@ -1,0 +1,14 @@
+type: research
+research:
+  - class: /SatisfactoryPlus/Content/SchematicManager/MAM/NewTrees/ResearchTree_Faxit.ResearchTree_Faxit_C
+    register: false
+    autoPath: true
+    addNodes:
+      - schematic: Schematic_Faxit_DimensionalAssembler
+        coordinate:
+          X: 4
+          Y: 4
+        parents:
+          - schematic: /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_4_10.Schematic_Faxit_4_10_C
+        unhiddenBy:
+          - schematic: /SatisfactoryPlus/Content/SchematicManager/MAM/Schematics/Faxit/Schematics/Schematic_Faxit_4_10.Schematic_Faxit_4_10_C
