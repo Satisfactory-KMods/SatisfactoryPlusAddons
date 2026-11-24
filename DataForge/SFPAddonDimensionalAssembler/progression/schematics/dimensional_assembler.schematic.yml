@@ -9,10 +9,9 @@ schematics:
         source: Dimensional Assembly
       mTechTier: 6
       mTimeToComplete: 30.0
-      # Temporary verified KLib texture matching Desc_CS_DimensionalAssembler until W3 KIconMaker icon lands.
       mSchematicIcon:
-        ResourceObject: /KLib/Assets/Buildings/Faxit/UI/Icons/Icon_ConverterMk1.Icon_ConverterMk1
-      mSmallSchematicIcon: /KLib/Assets/Buildings/Faxit/UI/Icons/Icon_ConverterMk1.Icon_ConverterMk1
+        ResourceObject: /KLib/Assets/Buildings/Faxit/UI/Icons/IconDesc_CS_DimensionalAssembler_512.IconDesc_CS_DimensionalAssembler_512
+      mSmallSchematicIcon: /KLib/Assets/Buildings/Faxit/UI/Icons/IconDesc_CS_DimensionalAssembler_256.IconDesc_CS_DimensionalAssembler_256
       mCost:
         - ItemClass: /Game/FactoryGame/Resource/Parts/SpaceElevatorParts/Desc_SpaceElevatorPart_4.Desc_SpaceElevatorPart_4_C
           Amount: 8

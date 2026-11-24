@@ -57,11 +57,12 @@ assets:
       mMessageSharing: EMS_AlwaysShare
       mMessageSharingDistanceOverride: 0.0
       mTrigger:
-        class: /Game/FactoryGame/AvailabilityDependencies/BP_SchematicPurchasedDependency.BP_SchematicPurchasedDependency_C
+        class: /Game/FactoryGame/AvailabilityDependencies/BP_ActorsBuiltDependency.BP_ActorsBuiltDependency_C
         properties:
-          mSchematics:
-            - /KDataForge/Gen/SFPAddonDimensionalAssembler.Gen_SFPAddonDimensionalAssembler_Schematic_Faxit_DimensionalAssembler_C
-          mRequireAllSchematicsToBePurchased: true
+          mActorsBuiltCount:
+            /KLib/Assets/Buildings/Faxit/Build_CS_DimensionalAssembler.Build_CS_DimensionalAssembler_C: 1
+          mType: ABT_BuiltTotal
+          mIsPlayerSpecific: false
       mTriggerDelay: 0.0
       mConditions: []
       mCanBeQueued: true
