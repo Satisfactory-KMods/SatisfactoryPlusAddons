@@ -6,7 +6,7 @@ recipes:
     mDisplayName:
       ns: SFPAddonIndustrialFermentation
       key: Recipe.f12.Name
-      source: Silage
+      source: Grain Meal
     mIngredients:
     - ItemClass: /Game/FactoryGame/Resource/Parts/GenericBiomass/Desc_Leaves.Desc_Leaves_C
       Amount: 12
